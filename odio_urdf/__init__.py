@@ -322,6 +322,12 @@ class Parent(Element):
 
 class Child(Parent):
     required_attributes = ['link']
+    
+class Collision_checking(Element):
+    allowed_elements = ['Capsule']
+
+class Capsule(Element):
+    allowed_attributes = ["name"]
 
 class Inertia(Element):
     allowed_attributes = ['ixx','ixy','ixz','iyy','iyz','izz']
@@ -352,8 +358,8 @@ class Geometry(Element):
 class Box(Element):
     allowed_attributes = ['size']
 
-class Capsule(Element):
-    allowed_attributes = ['radius','length']
+# class Capsule(Element):
+#     allowed_attributes = ['radius','length']
 
 class Cylinder(Element):
     allowed_attributes = ['radius','length']
