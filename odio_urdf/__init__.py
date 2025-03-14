@@ -345,6 +345,7 @@ class Inertia(Element):
 
 class Visual(Element):
     allowed_elements = ['Origin','Geometry','Material']
+    allowed_attributes = ['name']
 
 class Geometry(Element):
     allowed_elements = ['Box','Cylinder','Sphere','Mesh','Capsule']
